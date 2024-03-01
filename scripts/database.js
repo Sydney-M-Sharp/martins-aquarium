@@ -1,9 +1,3 @@
-/*
- *  To get you started, here's some properties of Bart.
- *  You need to add more properties to complete his
- *  representation as an object. Then add all the other
- *  fish to the collection.
- */
 const database = {
     fish: [
         {
@@ -21,7 +15,7 @@ const database = {
             food: "Stuffed Crust Pizza",
             length: "5 Inches",
             location: "Pond",
-            image: "https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgnjsIrwm_jkkWqELfrJ7ePPnqDVQl5jutXg&usqp=CAU",
         },
         {
             
@@ -30,7 +24,7 @@ const database = {
             food: "People",
             length: "2 Yards",
             location: "France",
-            image: "https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg",
+            image: "https://img.freepik.com/premium-photo/small-fish-with-black-background-small-fish-middle_925459-10633.jpg",
         },
         {
             
@@ -39,7 +33,7 @@ const database = {
             food: "Meth",
             length: "1 Foot",
             location: "Your Mom's House",
-            image: "https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKEmDv6onkraq3-LZ-AtzpStJQOlITzGZxw&usqp=CAU",
         }
     ],
 
@@ -57,8 +51,28 @@ const database = {
 
         },
         {
-            id: 3,
+            id: 4,
             locaitonsName: "Mexico",
+
+        },
+        {
+            id: 5,
+            locaitonsName: "The Big Pond",
+
+        },
+        {
+            id: 6,
+            locaitonsName: "Not Here But There",
+
+        },
+        {
+            id: 7,
+            locaitonsName: "Over Yonder",
+
+        },
+        {
+            id: 8,
+            locaitonsName: "Your Mom's house",
 
         },
     ],
@@ -67,19 +81,30 @@ const database = {
 
         {
             id: 1,
-            locaitonsName: "talk with your hands",
+            tipQuote: "Don't forget your passport.",
 
         },
         {
             id: 2,
-            locaitonsName: "frogs are there",
+            tipQuote: "If you wanna buy things make sure to bring money with you.",
 
         },
         {
             id: 3,
-            locaitonsName: "she will make you cookies",
+            tipQuote: "It's fucking hot. Don't wear leather!",
 
         },
+        
+    ],
+    fishCareTips: [
+        {
+
+            tankCareTip: "Clean your tank weekly with a light water change. Be sure to do a full water change monthly.",
+            waterCareTip: "Make sure the salt levels match your fishes natural environment.",
+            tempCareTip: "Your tropical fish should have their water comfortably at 75-80 F.",
+
+        },
+       
     ]
 }
 
@@ -89,4 +114,12 @@ export const getFish = () => {
 }
 export const getLocations = () => {
     return database.locations.map(location => ({...location}))
+}
+
+export const getTravelTips = () => {
+    return database.travelTips.map(travelTips => ({...travelTips}))
+}
+
+export const getFishCareTips = () => {
+    return database.fishCareTips.map(fishCareTips => ({...fishCareTips}))
 }
