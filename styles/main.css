@@ -92,6 +92,8 @@ h1 {
 
 /*Side bar area*/
 .SideBar {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(184, 248, 228);
     border-radius: 10px;
     width: 40%;

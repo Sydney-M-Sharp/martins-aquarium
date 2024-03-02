@@ -4,7 +4,6 @@ import { FishCare } from './fish/FishCare.js'
 import { LocationsList } from './locations/LocationsList.js'
 import { TravelTips } from './locations/TravelTips.js'
 
-// adding fish
 const parentHTMLElement = document.querySelector('.AllFish') // look for '.AllFish' then place FishList inside.
 parentHTMLElement.innerHTML = FishList() // the act of placing FishList
 
