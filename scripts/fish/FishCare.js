@@ -6,9 +6,9 @@ export const FishCare = () => {
     for (const tip of tips) {
         htmlString += `<section class="FishCareTips__card">
             
-        <div class="FishCareTips__quotes"> Fish Tank Tip: ${tip.tankCareTip}</div>
-        <div class="FishCareTips__quotes"> Fish Tank Water Tip: ${tip.waterCareTip}</div>
-        <div class="FishCareTips__quotes"> Fish Water Temperature Tip: ${tip.tempCareTip}</div>
+        <div class="FishCareTips__quotes"> <strong> Fish Tank Tip:</strong> ${tip.tankCareTip}</div>
+        <div class="FishCareTips__quotes"> <strong>Fish Tank Water Tip:</strong> ${tip.waterCareTip}</div>
+        <div class="FishCareTips__quotes"> <strong>Fish Water Temperature Tip:</strong> ${tip.tempCareTip}</div>
        
     </section>
 `

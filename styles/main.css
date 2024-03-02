@@ -1,6 +1,6 @@
 body {
     background-color: white;
-
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 }
 
@@ -23,7 +23,7 @@ h1 {
     border-radius: 10px;
 }
 
-/*Fish area*/
+/*Fish area on the left*/
 
 .FishSection {
     background-color: rgb(203, 250, 235);
@@ -89,6 +89,7 @@ h1 {
     margin-top: 11px;
 }
 
+/*Side bar area*/
 .SideBar {
     background-color: rgb(184, 248, 228);
     border-radius: 10px;
@@ -96,7 +97,7 @@ h1 {
     margin: 10px;
 
 }
-
+/*locations area*/
 .LocationinfoBox {}
 
 .LocationsHeader {
@@ -142,7 +143,7 @@ h1 {
 }
 
 
-
+/*location tips area*/
 
 .TipsinfoBox {
     background-color: rgb(232, 245, 205);
@@ -168,7 +169,7 @@ h1 {
     display: flex;
     justify-content: center;
 }
-
+/*care information area*/
 .CareinfoBox {
     background-color: rgb(232, 245, 205);
     margin: 10px;
@@ -182,19 +183,17 @@ h1 {
     display: flex;
     justify-content: center;
 }
+ 
 
-.AllFishCare {
+
+.FishCareTips__card {
     display: flex;
-    justify-content: center;
-
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.FishCareTips {}
+.FishCareTips__quotes {
 
-.FishCareTips__card {}
-
-.FishCareTips__quote {
-
-    display: flex;
-    justify-content: center;
-}
+    margin: 10px;
+} 
