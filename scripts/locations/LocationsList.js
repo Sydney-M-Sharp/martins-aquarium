@@ -1,8 +1,7 @@
-
-import {getLocations} from '../database.js'
+import { getLocations } from '../database.js'
 
 export const LocationsList = () => {
-    
+
     const locations = getLocations()
 
     let htmlString = '<article class="LocationsList">'
@@ -11,9 +10,9 @@ export const LocationsList = () => {
     for (const location of locations) {
 
         htmlString += `<section class="locations__card">
-    
+
             <div class="fish__locations"> - ${location.locaitonsName} - </div>
-           
+
         </section>
 `
     }
