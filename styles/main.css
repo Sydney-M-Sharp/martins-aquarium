@@ -55,10 +55,11 @@ h1 {
 }
 
 .fish__card {
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     background-color: rgba(212, 238, 157, 0.403);
     border-radius: 10px;
-
 }
 
 .fish__species,
@@ -91,6 +92,8 @@ h1 {
 
 /*Side bar area*/
 .SideBar {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(184, 248, 228);
     border-radius: 10px;
     width: 40%;
@@ -183,7 +186,7 @@ h1 {
     display: flex;
     justify-content: center;
 }
- 
+
 
 
 .FishCareTips__card {
@@ -196,4 +199,4 @@ h1 {
 .FishCareTips__quotes {
 
     margin: 10px;
-} 
+}
