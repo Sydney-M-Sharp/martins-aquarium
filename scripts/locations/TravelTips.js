@@ -6,7 +6,7 @@ export const TravelTips = () => {
     for (const tip of tips) {
         htmlString += `<section class="tips__card">
             
-        <div class="tips__quotes"> Trip Tips: ${tip.tipQuote}</div>
+        <div class="tips__quotes"> - ${tip.tipQuote} - </div>
        
     </section>
 `

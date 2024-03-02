@@ -5,7 +5,7 @@ export const LocationsList = () => {
     
     const locations = getLocations()
 
-    let htmlString = '<h2 class="locations__header"> Locations Visited: </h2><article class="LocationsList">'
+    let htmlString = '<article class="LocationsList">'
 
 
     for (const location of locations) {
