@@ -8,6 +8,7 @@ for (const fish of allFish) {
 
 import {FishList} from './fish/FishList.js'
 
+
 const parentHTMLElement = document.querySelector('.AllFish') // look for '.AllFish' then place FishList inside.
 parentHTMLElement.innerHTML = FishList() // the act of placing FishList 
 
