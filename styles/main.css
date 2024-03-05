@@ -88,6 +88,9 @@ h1 {
     height: 145px;
     width: 200px;
     margin-top: 11px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*Side bar area*/

@@ -1,11 +1,10 @@
 import { getFish } from '../database.js'
 
-export const FishList = () => {
+export const FishList = (listOfFishes) => {
 
-    const fishes = getFish()
     let htmlString = '<article class="FishList">'
 
-    for (const fish of fishes) {
+    for (const fish of listOfFishes) {
 
         htmlString += `<section class="fish__card">
             <div><img  class="fish__image" src="${fish.image}">  </img></div>
@@ -22,4 +21,46 @@ export const FishList = () => {
     htmlString += `</article>`
 
     return htmlString
+}
+
+
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const fishes = getFish()
+    let holyFish = []
+
+    for (const fish of fishes) {
+        if (fish.lengthNumber % 3 === 0) {
+            holyFish.push(fish)
+        }
+    }
+    return holyFish
+}
+
+
+
+export const soldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    const fishes = getFish()
+    let soldiers = []
+
+    for (const fish of fishes) {
+        if (fish.lengthNumber % 5 === 0) {
+            soldiers.push(fish)
+        }
+    }
+    return soldiers
+}
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    const fishes = getFish()
+    let regularFish = []
+
+    for (const fish of fishes) {
+        if (fish.lengthNumber % 3 != 0 && fish.lengthNumber % 5 != 0) {
+            regularFish.push(fish)
+        }
+    }
+    return regularFish
 }

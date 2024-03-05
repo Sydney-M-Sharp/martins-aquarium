@@ -4,9 +4,16 @@ const allFish = getFish()
 for (const fish of allFish) {
     console.log(fish);
 }
-import { FishList } from './fish/FishList.js'
+import { FishList, mostHolyFish, soldierFish, nonHolyFish } from './fish/FishList.js'
 const parentHTMLElement = document.querySelector('.AllFish') // look for '.AllFish' then place FishList inside.
-parentHTMLElement.innerHTML = FishList() // the act of placing FishList
+parentHTMLElement.innerHTML = FishList(mostHolyFish()) // the act of placing FishList
+
+const parentHTMLElementA = document.querySelector('.AllFish2') // look for '.AllFish' then place FishList inside.
+parentHTMLElementA.innerHTML = FishList(soldierFish()) // the act of placing FishList
+
+const parentHTMLElementB = document.querySelector('.AllFish3') // look for '.AllFish' then place FishList inside.
+parentHTMLElementB.innerHTML = FishList(nonHolyFish()) // the act of placing FishList
+
 
 // adding locations.
 const allLocations = getLocations()
